@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".Activitys.UserSettings.ChangePersonel">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/banner"
+        android:text="BİLGİLERİ DEĞİŞTİR"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logoo"/>
+    <EditText
+        android:id="@+id/bilgiDegisAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="AD"/>
+    <EditText
+        android:id="@+id/bilgiDegisSoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="SOYAD"/>
+    <EditText
+    android:id="@+id/bilgiDegisMail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:hint="MAİL"/>
+
+    <EditText
+        android:id="@+id/bilgiDegisPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="PAROLA"/>
+
+    <Button
+        android:id="@+id/bilgiBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEĞİŞTİR"
+        android:inputType="textPassword"/>
+
+</LinearLayout>

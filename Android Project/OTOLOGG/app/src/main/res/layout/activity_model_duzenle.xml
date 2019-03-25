@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".Activitys.AdminPanel.ModelDuzenle">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/banner"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="MODEL DÜZENLE"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Marka  "
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:id="@+id/modelDuzenleImg"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:id="@+id/textDuzenleMarka"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Model İsmi"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleAd"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:hint="Model"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Model Yılı"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleYil"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn: 2018"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Yakıt Türü  "
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/modelDuzenleYakitTuru"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn Mercedes"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Yakit Depo Hacmi"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleYakitDepoHacmi"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn: 40 litre"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Vites Türü"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/modelDuzenleVites"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Vites Kademesi"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleVitesKademe"
+                    android:layout_width="0dp"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn: 7"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Motor Gücü"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleMotorGucu"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn: 1.6"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Silindir Sayısı"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleSilindirSayisi"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn: 4"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Koltuk Sayısı"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleKoltukSayisi"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn: 5"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Kapı Sayısı"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleKapiSayisi"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn: 2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Ağırlık "
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleAgirlik"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn: 1500 kg"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Max Hız "
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleHiz"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn: 220 kmh"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Fiyat "
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/modelDuzenleFiyat"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:layout_height="wrap_content"
+                    android:hint="Örn: 180.000 TL"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/modelDuzenleBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GÜNCELLE"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="30dp"
+        android:id="@+id/markaImage"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:textColor="#000"
+        android:gravity="center|left"
+        android:textSize="18dp"
+        android:layout_height="50dp"
+        android:id="@+id/markaAd"/>
+</LinearLayout>

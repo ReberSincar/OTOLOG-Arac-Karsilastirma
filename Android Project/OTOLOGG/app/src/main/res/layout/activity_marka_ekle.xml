@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="10dp"
+android:orientation="vertical"
+tools:context=".Activitys.AdminPanel.MarkaEkle">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Marka İsmi : "
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/markaEkleAd"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:hint="Örn Mercedes"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Logo : "
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/markaEkleLogo"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:src="@drawable/picture"/>
+</LinearLayout>
+
+<Button
+    android:id="@+id/markaEkleBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Onayla"
+    android:textSize="20sp"
+    android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
